@@ -9,6 +9,15 @@
     <%= user.email %>
   </p>
 
+  <% if user.address %>
+    <div class="my-5">
+      <strong class="block font-medium mb-1">Address:</strong>
+      <p><%= user.address.street %></p>
+      <p><%= user.address.city %>, <%= user.address.state_province %></p>
+      <p><%= user.address.country %></p>
+    </div>
+  <% end %>
+
   <% if action_name != "show" %>
     <%= link_to "Show this user", user, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
     <%= link_to "Edit this user", edit_user_path(user), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>

@@ -7,18 +7,17 @@ class UsersController < ApplicationController
   end
 
   # GET /users/1 or /users/1.json
-  def show
-    # TODO: Hook up address
-  end
+  def show; end
 
   # GET /users/new
   def new
     @user = User.new
+    @user.build_address # Build a new address for the user
   end
 
   # GET /users/1/edit
   def edit
-    # TODO: Hook up address
+    @user.build_address unless @user.address # Build address if not already associated
   end
 
   # POST /users or /users.json
@@ -68,6 +67,6 @@ class UsersController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def user_params
-    params.require(:user).permit(:name, :email)
+    params.require(:user).permit(:name, :email, address_attributes: %i[id street city state_province country])
   end
 end
