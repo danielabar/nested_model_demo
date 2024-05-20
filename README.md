@@ -6,8 +6,9 @@ A companion project for a blog post about Rails nested attributes, fields_for he
 
 Make sure you're on Ruby version specified in `.ruby-version`.
 
+Then run the following to install dependencies, setup the database, and start the development server:
+
 ```bash
-bundle install
 bin/setup
 bin/dev
 ```
