@@ -81,6 +81,7 @@ GEM
       activerecord (>= 3.2, < 8.0)
       rake (>= 10.4, < 14.0)
     ast (2.4.2)
+    awesome_print (1.9.2)
     backport (1.2.0)
     base64 (0.2.0)
     benchmark (0.3.0)
@@ -376,6 +377,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
+  awesome_print
   bootsnap
   capybara
   debug
