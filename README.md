@@ -1,24 +1,13 @@
-# README
+# Rails Nested Model Demo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A companion project for a blog post about Rails nested attributes, fields_for helper, and optionally rejecting nested attributes.
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+Make sure you're on Ruby version specified in `.ruby-version`.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+bundle install
+bin/setup
+bin/dev
+```
