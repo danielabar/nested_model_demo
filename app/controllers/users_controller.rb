@@ -67,6 +67,8 @@ class UsersController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def user_params
+    # Allow address fields to be submitted via nested attributes
+    # params.require(:user).permit(:name, :email)
     params.require(:user).permit(:name, :email, address_attributes: %i[id street city state_province country])
   end
 end
