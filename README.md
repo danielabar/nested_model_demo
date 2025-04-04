@@ -1,6 +1,6 @@
 # Rails Nested Model Demo
 
-A companion project for a blog post about Rails nested attributes, fields_for helper, and optionally rejecting nested attributes.
+A companion project for a [blog post](https://danielabaron.me/blog/rails-reject-nested-attributes/) about Rails nested attributes, fields_for helper, and optionally rejecting nested attributes.
 
 ## Setup
 
